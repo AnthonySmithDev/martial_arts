@@ -1,0 +1,3 @@
+Diseña una base de datos relacional para una academia de artes marciales que permita almacenar
+  información sobre profesores, estudiantes, cursos, horarios, sedes, asistencias, pagos y rangos
+  alcanzados por los estudiantes, considerando las relaciones entre estas entidades y optimizando la consulta y manipulación de datos, tablas y columnas en ingles, el ID de cada tabla como ID.

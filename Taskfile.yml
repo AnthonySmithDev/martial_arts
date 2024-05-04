@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+
+  gen:
+    cmds:
+      - go generate ./ent
+
+  mysql-to-hcl:
+    cmds:
+      - atlas schema inspect -u "mysql://root:pass@localhost:3306/example" > schema.hcl
+
+  hcl-to-sqlite:
+    cmds:
+      - atlas schema apply --url "sqlite://file.db" --to "file://schema.hcl" --dev-url "sqlite://file?mode=memory"
+
+  entimport:
+    cmds:
+      - entimport -dsn "mysql://root:pass@tcp(localhost:3306)/example"

@@ -1,0 +1,6 @@
+
+crear el schema de la base de datos
+
+crear las tablas en la base de datos
+
+usar entimport para generar los modelos de ent framework

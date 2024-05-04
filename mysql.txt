@@ -1,0 +1,1 @@
+dame sentencia SQL para MySQL sin los índices necesarios ni enum
